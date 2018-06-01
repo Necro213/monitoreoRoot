@@ -1,14 +1,22 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Proyecto final server
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <img src="../../assets/imgs/logo.png" alt="">
+  <hr>
+  <ion-item>
+    <ion-label floating>username</ion-label>
+    <ion-input type="text" [(ngModel)]="username" name="username"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>password</ion-label>
+    <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+  </ion-item>
+<br>
+  <button ion-button color="dark" block (click)="doLogin()">Ingresar</button>
 </ion-content>
